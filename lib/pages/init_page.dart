@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_api/ui/general/colors.dart';
 
 class InitPage extends StatefulWidget {
   const InitPage({Key? key}) : super(key: key);
@@ -19,16 +20,25 @@ class _InitPageState extends State<InitPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kBrandPrimaryColor,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: kBrandPrimaryColor,
+        title: Image.asset(
+          'assets/images/logo.png',
+          height: 26.0,
+        ),
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.cast))],
+      ),
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xff212121),
+        backgroundColor: kBrandPrimaryColor,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white70,
         selectedFontSize: 12.0,
         unselectedFontSize: 12.0,
-
         type: BottomNavigationBarType.fixed,
-        currentIndex: _currentIndex, // Corregir aquí
+        currentIndex: _currentIndex,
         onTap: (int value) {
           setState(() {
             _currentIndex = value;

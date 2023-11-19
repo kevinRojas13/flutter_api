@@ -5,6 +5,29 @@ class InitPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            label: "Home",
+            icon: Icon(
+              Icons.add,
+            ),
+          ),
+          BottomNavigationBarItem(
+            label: "Per",
+            icon: Icon(
+              Icons.add,
+            ),
+          ),
+          BottomNavigationBarItem(
+            label: "Perfil",
+            icon: Icon(
+              Icons.add,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }

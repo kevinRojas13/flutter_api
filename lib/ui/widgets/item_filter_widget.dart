@@ -15,9 +15,9 @@ class ItemFilterWidget extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(right: 10.0),
       child: Chip(
-        backgroundColor: isSelected ? Colors.white : kBrandSecondaryColor,
+        backgroundColor: isSelected ? Colors.white : kBrandSecondaryColors,
         labelStyle: TextStyle(
-          color: isSelected ? kBrandPrimaryColor : Colors.white,
+          color: isSelected ? kBrandPrimaryColors : Colors.white,
         ),
         label: Text(text),
       ),

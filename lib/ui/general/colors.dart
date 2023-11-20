@@ -1,4 +1,4 @@
 import 'dart:ui';
 
-const Color kBrandPrimaryColor = Color(0xff212121);
-const Color kBrandSecondaryColor = Color(0xff383838);
+const Color kBrandPrimaryColors = Color(0xff212121);
+const Color kBrandSecondaryColors = Color(0xff383838);
